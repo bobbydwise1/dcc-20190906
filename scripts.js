@@ -71,11 +71,23 @@ const isColorable = (graphArray,k) => {
   return k <= max
 }
 
-console.log(isColorable(test0,3))
-console.log(isColorable(test1,2))
-console.log(isColorable(test2,4))
+// console.log(isColorable(test0,3))
+// console.log(isColorable(test1,2))
+// console.log(isColorable(test2,4))
 
 
 $(document).ready(function() {
-    $('#output-1').text(1)
+  let input1;
+  let input2;
+  $('#form1').submit(function(){
+    event.preventDefault()
+    input1 = $('#input-1').val()
+    input1 = input1.replace(/\'/g,'"')
+    input1 = JSON.parse(input1)
+    input2 = $('#input-2').val()
+    console.log(input1)
+    console.log(input2)
+    $('#output-1').text(isColorable(input1,input2))
+  })
+
 });

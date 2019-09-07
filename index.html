@@ -19,10 +19,20 @@
     <p>This problem was asked by Google.</p>
     <p>Given an undirected graph represented as an adjacency matrix and an integer k, write a function to determine whether each vertex in the graph can be colored such that no two adjacent vertices share the same color using at most k colors.</p>
     <h4><b>Answer:</b></h4>
-    <p>TBD</p>
+    <p>Enter a the following:</p>
     <div style='border: 2px solid black; margin: 10px; padding: 10px'>
+      <form id='form1'>
+        <p>The adjacendcy matrix should follow the format of:</p>
+        <pre>[[0,1,0,1],[1,0,1,0],[0,1,0,1],[1,0,1,0]]</pre>
+        <p>(javascript 2-D array)</p>
+        <p>Enter an adjacency matrix: <input id='input-1' type='text' required placeholder='[[0,1,0,1],[1,0,1,0],[0,1,0,1],[1,0,1,0]]'></p>
+        <p>Enter a k value: <input id='input-2' type='number' required placeholder='3' step='1' min='0' max='100'></p>
+        <button type='submit'>Submit</button>
+      </form>
     </div>
     <div style='border: 2px solid black; margin: 10px; padding: 10px'>
+    <p>Results: </p>
+    <p><b><span id='output-1'></span></b></p>
     </div>
   </div>
 </body>
